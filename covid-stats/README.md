@@ -127,8 +127,8 @@ kubectl apply -f service_account.yaml
 cd k8s_install/
 kubectl config set-context --current --namespace ocean-compute
 kubectl apply -f sa.yml
-kubectl apply -f storage-class.yml
-kubectl apply -f binding.yaml
+kubectl apply -f storage-class.yaml
+kubectl apply -f binding.yml
 kubectl apply -f operator.yml
 kubectl apply -f computejob-crd.yaml
 kubectl apply -f workflow-crd.yaml
